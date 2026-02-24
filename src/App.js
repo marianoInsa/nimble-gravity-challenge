@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import JobList from './components/JobList';
 
 function App() {
+  // Using a test email to fetch candidate info as per instructions.
+  // This could also be a prop, context, or state based on a login screen.
+  const userEmail = "marianoinsaurralde5@gmail.com";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <JobList email={userEmail} />
     </div>
   );
 }
