@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Nimble Gravity Challenge - Job Application Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Available Scripts
+A modern, responsive React application for visualizing and applying to job openings. 
+The interface was designed with a focus on a premium User Experience (UX) and an appealing User Interface (UI), featuring *Dark Mode*, *glassmorphism*, and seamless adaptability to any screen size.
 
-In the project directory, you can run:
+## 🚀 Technologies Used
 
-### `npm start`
+- **React.js**: Core library for building user interfaces.
+- **Tailwind CSS v3**: Utility-first CSS framework for rapid, modern, and responsive styling.
+- **JavaScript (ES6+)**: Main programming language.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Dynamic Job Listings**: Fetching open positions directly from the API (Endpoint `GET /api/jobs/get-list`).
+- **Seamless Integrated Application**: An embedded form within each job card to input a GitHub repository URL and submit the application.
+- **Authentication (Mocked)**: Fetching candidate information based on their email address (Endpoint `GET /api/candidate/get-by-email`).
+- **UI State Management**: 
+  - *Loading State*: Interface skeletons (*Shimmer Effects*) that enhance the perception of speed.
+  - *Error States*: Clear visual feedback for both initial load failures and rejected application requests from the server (with explicit support for HTTP 400 validation origins).
+- **Responsive Design (Mobile First)**: 
+  - *Smartphones*: Single-column vertical card layout.
+  - *Tablets and Monitors (Desktop)*: Adaptability utilizing a multi-column grid layout (`grid-cols-2` and `grid-cols-3` depending on available space).
 
-### `npm test`
+## 🛠 Installation and Local Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository and enter the directory:**
+   ```bash
+   git clone https://github.com/marianoInsa/nimble-gravity-challenge.git
+   cd nimble-gravity-challenge
+   ```
 
-### `npm run build`
+2. **Configure environment variables:**
+   Create a `.env` file in the root of the project with the following configuration:
+   ```env
+   REACT_APP_API_URL=https://botfilter-h5ddh6dye8exb7ha.centralus-01.azurewebsites.net
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   > This will start the application at [http://localhost:3000](http://localhost:3000). The page will automatically reload when you make changes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Deployment (Production Build):**
+   ```bash
+   npm run build
+   ```
+   > This will generate a `build` folder containing minified static files ready to be served on any hosting platform (Vercel, Netlify, Azure, etc).
 
-### `npm run eject`
+## 📸 Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Below are screenshots of the application rendering at different resolutions:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Mobile View (Smartphone)
+![Mobile View](doc/mobile-home.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Desktop View (Standard Monitor / Laptop)
+![Laptop View](doc/laptop-home.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Desktop View (Large Monitor / Ultrawide)
+![LaptopL View](doc/laptopL-home.png)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2026 | Project developed for the Nimble Gravity Challenge by [Mariano Insaurralde](https://www.linkedin.com/in/marianoinsa).
