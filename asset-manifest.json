@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nimble-gravity-challenge/static/css/main.0e960287.css",
+    "main.js": "/nimble-gravity-challenge/static/js/main.3901e62f.js",
+    "index.html": "/nimble-gravity-challenge/index.html",
+    "main.0e960287.css.map": "/nimble-gravity-challenge/static/css/main.0e960287.css.map",
+    "main.3901e62f.js.map": "/nimble-gravity-challenge/static/js/main.3901e62f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e960287.css",
+    "static/js/main.3901e62f.js"
+  ]
+}
