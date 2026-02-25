@@ -16,7 +16,8 @@ The interface was designed with a focus on a premium User Experience (UX) and an
 ## ✨ Features
 
 - **Dynamic Job Listings**: Fetching open positions directly from the API (Endpoint `GET /api/jobs/get-list`).
-- **Seamless Integrated Application**: An embedded form within each job card to input a GitHub repository URL and submit the application.
+- **Seamless Integrated Application**: An embedded form within each job card to input a GitHub repository URL and submit the application (Endpoint `POST /api/candidate/apply-to-job`).
+  - *Bug Fix - 400 Bad Request:* During integration, the API returned a hidden 400 error indicating that `applicationId` was missing in the payload. This was successfully resolved by parsing `applicationId` from the candidate profile and injecting it alongside the required UUID, jobId, and candidateId.
 - **Authentication (Mocked)**: Fetching candidate information based on their email address (Endpoint `GET /api/candidate/get-by-email`).
 - **UI State Management**: 
   - *Loading State*: Interface skeletons (*Shimmer Effects*) that enhance the perception of speed.
